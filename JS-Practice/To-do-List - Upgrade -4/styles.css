@@ -1,0 +1,71 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    transition: background 0.5s, color 0.5s;
+}
+
+/* Notification Badge */
+.notification-container {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-weight: bold;
+    display: none;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode .container {
+    background: #333;
+    color: white;
+}
+
+/* Task List */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: lightgray;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+li:hover {
+    background: #ddd;
+}
+
+/* Task Progress */
+.progress-container {
+    width: 100px;
+    background-color: #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.progress-bar {
+    height: 10px;
+    background-color: green;
+    width: 0%;
+    transition: width 0.5s;
+}
